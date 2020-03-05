@@ -3,6 +3,8 @@ import Gallery from './Gallery';
 import SearchForm from './SearchForm';
 import jsonp from 'jsonp-es6';
 
+
+
 class FlickrSearch extends Component {
   constructor() {
     super();
@@ -38,7 +40,6 @@ class FlickrSearch extends Component {
   render() {
     return (
       <div>
-        <h1> Coming soon</h1>
         <h1>Image Search</h1>
           <SearchForm onChange={ this.fetchImages } />
           <Gallery data={this.state.data} images={ this.state.images } />
